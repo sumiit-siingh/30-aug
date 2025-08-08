@@ -19,26 +19,39 @@ const CelebratePage = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="text-lg text-gray-700 mb-12"
+        className="text-lg text-gray-700 mb-12 max-w-xl"
       >
-        Here are a couple more surprises for you...
+        I've put together a few little things to show you just how much you mean to me. I hope you like them.
       </motion.p>
 
-      <div className="flex flex-col md:flex-row gap-6">
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link href="/memories" className="px-8 py-4 bg-white text-rose-500 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center gap-3">
-            See Our Memories Spin ✨
+      {/* Grid for Navigation Buttons */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link href="/memories" className="nav-button">
+            Our Memories Spin ✨
           </Link>
         </motion.div>
         
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link href="/world" className="px-8 py-4 bg-white text-rose-500 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center gap-3">
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link href="/letters" className="nav-button">
+            Some Letters For You 💌
+          </Link>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link href="/song" className="nav-button">
+            Listen To Our Song 🎵
+          </Link>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link href="/quiz" className="nav-button">
+            A Little Quiz! 🤔
+          </Link>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link href="/world" className="nav-button">
             Explore Our World 🌍
           </Link>
         </motion.div>

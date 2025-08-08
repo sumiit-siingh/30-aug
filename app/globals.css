@@ -5,6 +5,16 @@
   --foreground: #171717;
 }
 
+
+
+@tailwind utilities;
+
+/* Add this to your globals.css file */
+@layer components {
+  .nav-button {
+    @apply block px-8 py-4 bg-white text-rose-500 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center;
+  }
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
